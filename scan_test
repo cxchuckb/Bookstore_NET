@@ -1,4 +1,4 @@
 string firstname = "add first name";
 int zip = 60601;
 string lastName = "add last name";
-string errorLog = "";
+string errorLog = "here.com";
