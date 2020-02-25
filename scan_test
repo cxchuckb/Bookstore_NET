@@ -1,1 +1,2 @@
 string name = "chuck";
+int zip = 60601;
