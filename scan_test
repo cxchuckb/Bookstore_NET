@@ -1,2 +1,3 @@
-string name = "chuck";
+string firstname = "chuck";
 int zip = 60601;
+string lastName = "Bienenfeld";
