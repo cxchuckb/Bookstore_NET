@@ -21,6 +21,10 @@
     <table id="Search_holder" runat="Server" style="width:100%">
 	
 	<tr>
+		<td>
+			txtUserId = getRequestString("UserId");
+			txtSQL = "SELECT * FROM Users WHERE UserId = " + txtUserId;
+		</td>
       <td style="background-color: #FFEAC5; border-style: inset; border-width: 0"><font style="font-size: 10pt; color: #000000">Category</font></td>
       <td style="background-color: #FFFFFF; border-width: 1">
 	<asp:DropDownList style="font-size: 10pt; color: #000000"
