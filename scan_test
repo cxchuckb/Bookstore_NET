@@ -1,2 +1,5 @@
-string txtUserId = getRequestString("UserId");
-txtSQL = "SELECT * FROM Users WHERE UserId = " + txtUserId;
+string fName = "";
+string lName = "";
+
+//string txtUserId = getRequestString("UserId");
+//txtSQL = "SELECT * FROM Users WHERE UserId = " + txtUserId;
