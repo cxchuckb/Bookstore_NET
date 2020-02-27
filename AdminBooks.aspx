@@ -41,6 +41,8 @@
 	
 	  </td>
       <td >
+	      // New input added
+	      <input type="text" name="fname"><br>
 	  <asp:Button
 		id=Search_search_button
 		Text="Search"
