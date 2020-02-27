@@ -38,7 +38,6 @@ namespace Book_Store
 		protected string CardTypes_sCountSQL;
 		protected int CardTypes_CountPage;
 		protected int i_CardTypes_curpage=1;
-		protected string CardName;
 	
 		// For each CardTypes form hiddens for PK's,List of Values and Actions
 		protected string CardTypes_FormAction="CardTypesRecord.aspx?";
