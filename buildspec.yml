@@ -13,4 +13,6 @@ phases:
       - export CX_PROJECT_NAME=$(basename "$CODEBUILD_SOURCE_REPO_URL") 
       - export CX_PROJECT_BRANCH=$(basename "$CODEBUILD_SOURCE_VERSION") 
       - env
-      - ~/cxcli/runCxConsole.sh Scan -CxServer $CX_SERVER -CxUser $CX_USER -CxPassword $CX_PASSWORD -ProjectName "$CX_TEAM\\$CX_PROJECT_NAME-$CX_PROJECT_BRANCH" -preset "$CX_PRESET" -LocationType folder -LocationPath $CODEBUILD_SRC_DIR -SASTHigh $CX_HIGH -SASTMedium $CX_MEDIUM -SASTLow $CX_LOW -ReportXML results -$CX_PROJECT_NAME -$CX_PROJECT_BRANCH.xml -ReportPDF results -$CX_PROJECT_NAME -$CX_PROJECT_BRANCH.pdf -Comment "git $CX_PROJECT_BRANCH@$CODEBUILD_RESOLVED_SOURCE_VERSION" -verbose 
+      - echo $CX_SERVER
+      - echo $CX_USER
+      - ~/cxcli/runCxConsole.sh Scan -CxServer $CX_SERVER -CxUser $CX_USER -CxPassword $CX_PASSWORD -ProjectName "$CX_TEAM\\$CX_PROJECT_NAME-$CX_PROJECT_BRANCH" -LocationType folder -LocationPath $CODEBUILD_SRC_DIR
