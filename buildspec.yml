@@ -6,7 +6,7 @@ phases:
       java: openjdk11 
   post_build: 
     commands: 
-      - wget -O ~/cxcli.zip https://download.checkmarx.com/9.0.0/Plugins/CxConsolePlugin-2020.2.3.zip
+      - wget -O ~/cxcli.zip https://download.checkmarx.com/9.0.0/Plugins/CxConsolePlugin-2021.1.1.zip
       - unzip ~/cxcli.zip -d ~/cxcli 
       - rm -rf ~/cxcli.zip 
       - chmod +x ~/cxcli/runCxConsole.sh 
